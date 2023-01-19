@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid</title>
+    <!-- Bootstrap styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!-- without number grid between container-fluid -->
+    <div class="container-fluid bg-danger-subtle text-white mb-5">
+        <h1>I have without number grid between container-fluid</h1>
+        <p>Where all of the columns taking equal spaces</p>
+        <div class="row bg-info">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+        <div class="row bg-secondary">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+        <div class="row bg-success">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+    </div>
+
+
+    <!-- without number grid between container -->
+    <div class="container bg-danger-subtle text-white mb-5">
+        <h1>I have without number grid between container</h1>
+        <p>Where all of the columns taking equal spaces</p>
+        <div class="row bg-info">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+        <div class="row bg-secondary">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+        <div class="row bg-success">
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+            <div class="col">I will take equal space</div>
+        </div>
+    </div>
+
+
+    <!-- without number grid between container-fluid -->
+    <div class="container-fluid bg-danger-subtle text-white mb-5">
+        <h1>I have with number grid between container-fluid</h1>
+        <p>Where all of the columns taking defined spaces</p>
+        <div class="row mb-3">
+            <div class="col-sm-6 bg-info">I will collapse when reaches less then 576px</div>
+            <div class="col-sm-3 bg-danger">I will collapse when reaches less then 576px</div>
+            <div class="col-sm-3 bg-dark">I will collapse when reaches less then 576px</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-2 bg-warning">I will collapse when screen size reaches less than 768px</div>
+            <div class="col-md-8 bg-secondary">I will collapse when screen size reaches less than 768px</div>
+            <div class="col-md-2 bg-success">I will collapse when screen size reaches less than 768px</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm bg-info">I will collapse when screen size reaches less than 576px</div>
+            <div class="col-md bg-danger">I will collapse when screen size reaches less than 768px</div>
+            <div class="col-lg bg-dark">I will collapse when screen size reaches less than 992px</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-4 col-md-6 bg-warning">Upto 768px I will take 6 span, but below that upto 576px I will
+                take 4 span, and then I will take 100% if it reaches less than 576px</div>
+            <div class="col-sm-5 col-md-4 bg-success">Upto 768px I will take 4 span, but below that upto 576px I will
+                take 5 span, and then I will take 100% if it reaches less than 576px</div>
+            <div class="col-sm-3 col-md-2 bg-secondary">Upto 768px I will take 2 span, but below that upto 576px I will take
+                3 span, and then I will take 100% if it reaches less than 576px </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-3 col-md-4 col-lg-3 bg-info">When large I will take 3, When md I will take 4, when sm I will take 3, below sm I will take 100%</div>
+            <div class="col-sm-6 col-md-4 col-lg-6 bg-danger">When large I will take 6, When md I will take 4, when sm I will take 6, below sm I will take 100%</div>
+            <div class="col-sm-3 col-md-4 col-lg-3 bg-warning">When large I will take 3, When md I will take 4, when sm I will take 3, below sm I will take 100%</div>
+        </div>
+    </div>
+
+
+    <!-- define columns per row -->
+    <div class="container-fluid bg-danger text-white mb-5">
+        <h1>Here I have defined how many columns a row can have</h1>
+        <div class="row row-cols-3">
+            <div class="col bg-info">1 of 9</div>
+            <div class="col bg-info">2 of 9</div>
+            <div class="col bg-info">3 of 9</div>
+            <div class="col bg-info">4 of 9</div>
+            <div class="col bg-info">5 of 9</div>
+            <div class="col bg-info">6 of 9</div>
+            <div class="col bg-info">7 of 9</div>
+            <div class="col bg-info">8 of 9</div>
+            <div class="col bg-info">9 of 9</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
